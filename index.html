@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My profile</title>
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            font-size: 18px;
+            background-color: rgb(115, 211, 115);
+            color: #333;
+            padding: 20px;
+        }
+        img {
+            animation: bounce 3s infinite;
+            border-radius: 50%;
+            object-fit: cover;
+            width: 200px;
+            height: 200px;
+        }
+        @keyframes bounce {
+            0% {transform: translateY(0px);}
+            50% {transform: translateY(-15px);}
+            100% {transform: translateY(0px);}
+        }
+    </style>
 </head>
 <body>
     <h1>AI Robot</h1>
@@ -23,10 +44,10 @@
 
         <label for="gender"><b>Gender</b></label><br>
         <input type="radio" id="Female" name="gender" value="female">
-        <label for="female">female</label>
+        <label for="female">Female</label>
 
         <input type="radio" id="Male" name="gender" value="male">
-        <label for="male">male</label><br><br>
+        <label for="male">Male</label><br><br>
 
         <label for="message">Message:</label><br>
         <textarea id="message" name="message"></textarea><br><br>
